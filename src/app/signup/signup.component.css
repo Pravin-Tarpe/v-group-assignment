@@ -1,0 +1,54 @@
+
+.heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.container {
+    border: 15px solid rgb(99, 42, 42);
+    padding: 20px 60px 20px 40px;
+    width: 25vw;
+    margin: auto;
+    position: fixed;
+    left: 35%;
+    top: 12%;
+}
+
+.form-group {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.form-control {
+    background-color:  rgb(197, 193, 193);
+    position: absolute;
+    right: 0px;
+    width: 200px;
+    border: 1px solid rgb(51, 51, 51);
+}
+
+
+
+.btn {
+    padding: 2px 20px;
+    background-color: rgb(197, 193, 193);
+    border: 1px solid grey;
+    margin: 20px 40%;
+}
+
+.alert {
+    margin: 10px 0;
+    padding: 2px;
+    color : red;
+}
+
+input.ng-touched.ng-invalid {
+    border: 2px solid red;
+    background-color: white;
+}
+
+.link {
+    position : absolute;
+    left: 0%;
+    top: 110%; 
+}

@@ -1,0 +1,18 @@
+.heading {
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+#button {
+ margin-bottom: 20px;
+ width: 80px;
+ height: 30px;
+}
+
+.spinner {
+    margin-left: 45%;
+}

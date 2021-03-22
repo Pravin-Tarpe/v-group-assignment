@@ -1,0 +1,40 @@
+.backdrop {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.75);
+    position: fixed;
+    z-index : 50;
+    left: 0;
+    top: 0;
+}
+
+.alert-box {
+    position: fixed;
+    z-index: 60;
+    left: 35vw;
+    width: 25vw;
+    padding: 40px;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.26);
+    top: 30vh;
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.form-control {
+    background-color:  rgb(197, 193, 193);
+    position: absolute;
+    right: 0px;
+    width: 200px;
+    border: 1px solid rgb(51, 51, 51);
+}
+
+.alert {
+    margin: 10px 0;
+    padding: 2px;
+    color : red;
+}

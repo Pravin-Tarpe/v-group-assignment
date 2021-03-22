@@ -1,0 +1,36 @@
+<div class="heading">
+  <h1>Dashboard</h1>
+</div>
+<div class="container">
+  <div class="spinner">
+    <app-loader *ngIf="!loaded"></app-loader>
+  </div>
+  <button type="button" id="button" (click)="onCreate()" *ngIf="loaded">Create</button>
+  <table datatable class="row-border hover" *ngIf="loaded">
+    <thead>
+      <tr>
+        <th>Employee ID</th>
+        <th>Employee Name</th>
+        <th>Salary</th>
+        <th>Age</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let emp of employees">
+        <td>{{ emp.id }}</td>
+        <td>{{ emp.employee_name}}</td>
+        <td>{{ emp.employee_salary}}</td>
+        <td>{{ emp.employee_age}}</td>
+        <td><button (click)="onEdit(emp)">Edit</button> /
+            <button (click)="onDelete(emp.id)">Delete</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<app-create-employee-record (cancel)="onCancelClicked()" *ngIf="isCreated"></app-create-employee-record>
+<app-edit-employee-record 
+  (cancel)="onCancelClicked()" 
+  *ngIf="isEdited"
+  [employeeRecord]="employeeData">
+</app-edit-employee-record>
